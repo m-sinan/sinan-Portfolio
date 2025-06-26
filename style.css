@@ -8,9 +8,13 @@
   margin: auto;
   --bs-gutter-x: 0rem;
 }
+
+/* sidebar container */
+
 .main-container .side-menu{
 display: none;
 }
+
 .side-menu .menu-header{
   padding: 15px;
   color: white;
@@ -27,10 +31,25 @@ display: none;
   font-size: 1.2rem;
   margin: 20px 0;
 }
+.side-menu .side-menu-git-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.side-menu .side-menu-git-button button{
+    background-color: #5b1c15;
+    color: white;
+    border: none;
+    padding: 5px 35px;
+    border-radius: 10px;
+    cursor: pointer
+}
 .header {
   width: 100%;
   background-color: #fff;
-  padding: 0px 10px;
+  padding: 5px 10px;
   display: flex;
 }
 .header .logo{
@@ -177,7 +196,8 @@ font-weight: 600;
 }
 .main-container .side-menu{
   display: block;
-  position: absolute;
+  position:fixed;
+  top: 0;
   right: 0;
   width: 60%;
   height: 100vh;
