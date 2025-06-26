@@ -229,7 +229,7 @@ height: auto;
 display: flex;
 justify-content: center;
 gap: 30px;
-margin-top: 70px;
+margin-top: 50px;
 padding: 10px;
 }
 .skills{
@@ -271,6 +271,17 @@ padding: 20px;
   color: #919191;
   font-size: 1rem;
   margin-top: 20px;
+}
+.project-container{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.project-container .card{
+  width: 30%;
+  height: 30dvh;
+margin: auto;
 }
 
 /* media queries */
