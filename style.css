@@ -207,6 +207,9 @@ font-weight: 600;
   .main-container {
     width: 100%;
   }
+  .side-nav{
+    display: none;
+  }
   .main-container .side-menu{
   display: block;
   position:fixed;
@@ -220,6 +223,11 @@ font-weight: 600;
 #side-menu{
   transform: translateX(100%);
   transition: all 1s ease;
+  z-index: 1;
+}
+.header{
+    position: fixed;
+    top: 0;
 }
 #side-menu.active{
   transform: translateX(0);
@@ -241,6 +249,7 @@ font-weight: 600;
         flex-direction:column-reverse;
         height: auto;
         align-items: start;
+        margin-top: 50px;
         padding-top: 15px;
     }
     #section-one .left-container{
