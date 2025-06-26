@@ -252,7 +252,7 @@ font-weight: 600;
     }
     #section-one {
         flex-direction:column-reverse;
-        height: 76dvh;
+        height: 82dvh;
         align-items: start;
         margin-top: 80px;
         padding-top: 15px;
