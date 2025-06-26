@@ -299,6 +299,7 @@ margin: auto;
   .main-container .side-menu{
   display: block;
   position:fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   width: 60%;
