@@ -8,6 +8,9 @@
   margin: auto;
   --bs-gutter-x: 0rem;
 }
+.main-container .side-menu{
+display: none;
+}
 .header {
   width: 100%;
   background-color: #fff;
@@ -70,8 +73,6 @@ font-weight: 600;
 .header-git-button button:hover{
     box-shadow: 0 0 10px rgba(67, 67, 67, 0.604);
 }
-
-
 /* sections */
 
 #section-one{
@@ -157,5 +158,14 @@ font-weight: 600;
     padding: 20px;
     display: flex;
     align-items: center;
+}
+.main-container .side-menu{
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: #450903a3;
+  border-radius: 10px 0px 0px 10px;
 }
 }
