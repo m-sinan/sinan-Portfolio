@@ -135,6 +135,15 @@ font-weight: 600;
     font-size: 1rem;
     font-family: "Space Grotesk", sans-serif;
 }
+.left-container button{
+    background-color: #5b1c15;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
 .developer-text:hover{
     transform: translate(0, -5px);
     transition: all 1s ease;
