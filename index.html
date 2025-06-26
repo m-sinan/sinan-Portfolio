@@ -16,9 +16,9 @@
 
 <body>
     <div class="main-container">
-        <div class="side-menu">
+        <div id="side-menu" class="side-menu menu-close">
             <div class="menu-header">
-                <a>
+                <a onclick="toggleMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-x-lg" viewBox="0 0 16 16">
                         <path
@@ -65,7 +65,7 @@
             </div>
             </div>
         </div>
-        <div class="header">
+        <nav class="header">
             <div class="logo">
                 <a>web.sinan</a>
             </div>
@@ -99,7 +99,7 @@
                 </a>
             </div>
             <div class="header-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -114,7 +114,7 @@
                     </svg>
                 </button>
             </div>
-        </div>
+        </nav>
         <div id="section-one">
             <div class="left-container">
                 <h1>Welcome to my Web
@@ -133,6 +133,7 @@
 
     <!-- script links -->
 
+    <script src="/java.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         </script>
