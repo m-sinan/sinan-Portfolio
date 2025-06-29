@@ -283,9 +283,26 @@ padding: 20px;
   z-index: 0;
 }
 .project-container .card{
+  padding: 10px;
   width: 30%;
-  height: 30dvh;
+  height: auto;
 margin: auto;
+}
+.project-container .card h6{
+font-weight: bolder;
+margin-top: 20px;
+}
+.project-container .card p{
+    color: #919191;
+}
+.project-container .card button{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: smaller;
 }
 
 /* media queries */
