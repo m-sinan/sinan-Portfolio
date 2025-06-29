@@ -465,6 +465,7 @@
   .connect-container {
     flex-direction: column;
     padding: 0;
+    gap: 10px;
     padding-top: 10px;
   }
   .connect-container .left-section {
