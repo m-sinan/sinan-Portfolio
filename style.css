@@ -512,4 +512,7 @@
   .connect-container .right-section {
     width: 90%;
   }
+  .right-section input{
+   margin-bottom: 20px; 
+  }
 }
