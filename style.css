@@ -514,5 +514,14 @@
   }
   .right-section input{
    margin-bottom: 20px; 
+   padding: 10px;
+   border: 1px rgba(85, 85, 85, 0.54) solid;
+   border-radius: 10px;
+  }
+  .right-section textarea{
+    border-radius: 10px;
+       border: 1px rgba(85, 85, 85, 0.54) solid;
+   padding: 10px;
+
   }
 }
