@@ -72,11 +72,11 @@ html{
   font-family: "Space Grotesk", sans-serif;
   font-size: 25px;
   font-weight: 600;
+    transition: all 0.3s ease;
 }
 .logo a:hover {
   color: #007bff;
   transform: scale(1.05);
-  transition: all 0.3s ease;
 }
 .header-links {
   display: flex;
@@ -89,6 +89,7 @@ html{
   color: black;
   font-size: 15px;
   margin: 0 20px;
+  transition: all .2s ease-in-out;
 }
 .header-links a:hover {
   transform: translate(0, -2px);
@@ -115,11 +116,11 @@ html{
   padding: 5px 35px;
   border-radius: 5px;
   cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 .header-git-button button:hover {
-  box-shadow: 0 0 10px rgba(67, 67, 67, 0.604);
+  box-shadow: 0 0 10px rgba(67, 67, 67, 0.704);
   transform: translate(0, -2px);
-  transition: all 0.5s ease-in-out;
 }
 
 /* sections one*/
@@ -154,6 +155,10 @@ html{
   border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
+  transition: all .3s ease-in-out;
+}
+.left-container button:hover{
+  transform:scale(.9);
 }
 .developer-text:hover {
   transform: translate(0, -5px);
@@ -185,6 +190,18 @@ html{
   font-size: 20px;
   padding-top: 20px;
   margin-top: 50px;
+  animation: s-up linear both;;
+    animation-timeline: view();
+    animation-range: 50vh 75vh;
+}
+@keyframes s-up {
+    from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-100px);
+  }
+
 }
 .client-head h3 {
   font-family: "Space Grotesk", sans-serif;
@@ -197,6 +214,9 @@ html{
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
+    animation: s-up linear both;;
+    animation-timeline: view();
+    animation-range: 50vh 75vh;
 }
 .client-logos ul {
   display: flex;
@@ -212,6 +232,15 @@ html{
 }
 .skill-container {
   text-align: center;
+  animation: s-left linear both;
+      animation-timeline: view();
+    animation-range: 10vh 60vh;
+}
+@keyframes s-left {
+  from{
+      transform: translateX(-100%);
+  }
+  to{  transform: translateX(0%);}
 }
 .skill-container h5 {
   font-family: "Space Grotesk", sans-serif;
@@ -249,6 +278,7 @@ html{
   border-radius: 50%;
   margin: auto;
 }
+
 .skills svg {
   color: white;
   padding: 5px;
@@ -266,6 +296,15 @@ html{
   height: auto;
   text-align: center;
   padding-top: 5%;
+  animation: s-right linear both;
+      animation-timeline: view();
+    animation-range: 10vh 60vh;
+}
+@keyframes s-right {
+  from{
+      transform: translateX(100%);
+  }
+  to{  transform: translateX(0%);}
 }
 #section-three h1 {
   font-weight: bolder;
@@ -289,10 +328,10 @@ html{
   width: 30%;
   height: auto;
   margin: auto;
+    transition: all 0.6s ease-out ;
 }
 .project-container .card:hover {
   transform: scale(1.1);
-  transition: all 0.5s ease-out;
 }
 .project-container .card h6 {
   font-weight: bolder;
@@ -317,10 +356,25 @@ html{
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
+
+
+/* section four */
+
 #section-four {
   text-align: center;
   padding: 50px;
+  animation: s-down;
+  animation-timeline: scroll();
 }
+@keyframes s-down{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
 #section-four h1 {
   font-weight: bolder;
   font-size: 2.2rem;
@@ -346,6 +400,7 @@ html{
   color: white;
   padding: 50px;
 }
+
 .left-section h5 {
   font-size: 1.4rem;
   font-weight: bolder;
@@ -398,11 +453,15 @@ html{
   padding: 5px 20px;
   margin-top: 5px;
   border-radius: 5px;
-background-color: #52231e;
-color: white;
-font-size: .9rem;
-
+background-color: #46211d;
+color: rgb(225, 225, 225);
+font-size: .8rem;
+transition: all .3s ease-in-out;
 }
+.right-section button:hover{
+  transform: scale(.9);
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
   .main-container {
