@@ -62,17 +62,26 @@ html{
   position: fixed;
   top: 0;
   z-index: 1;
+
 }
 .header .logo {
   width: 10%;
   display: flex;
   align-items: center;
 }
+
 .logo a {
   font-family: "Space Grotesk", sans-serif;
   font-size: 25px;
   font-weight: 600;
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: -20rem;
+  animation: logo-l-animation 1.5s ease-in-out forwards;
+}
+@keyframes logo-l-animation {
+  to{
+    margin-left: 0;
+  }
 }
 .logo a:hover {
   color: #007bff;
@@ -90,6 +99,13 @@ html{
   font-size: 15px;
   margin: 0 20px;
   transition: all .2s ease-in-out;
+  margin-top: -10rem;
+  animation: links-t-animation 1.5s ease-in-out .2s forwards;
+}
+@keyframes links-t-animation {
+  to{
+  margin-top: 0rem;  
+}
 }
 .header-links a:hover {
   transform: translate(0, -2px);
@@ -100,6 +116,15 @@ html{
   justify-content: end;
   align-items: center;
 }
+.header-menu-button svg{
+  margin-right: -5rem;
+  animation: menubt-r-animation 1.5s ease-in-out forwards;
+}
+@keyframes menubt-r-animation {
+  to{
+    margin-right: 0;
+  }
+}
 .header-menu-button {
   display: none;
 }
@@ -108,6 +133,13 @@ html{
   justify-content: end;
   align-items: center;
   width: 8%;
+  margin-left: 20rem;
+  animation: gitbt-l-animation 1.5s ease-in-out forwards;
+}
+@keyframes gitbt-l-animation {
+  to{
+  margin-left:0;
+  }
 }
 .header-git-button button {
   background-color: #280e0b;
@@ -142,10 +174,26 @@ html{
 .left-container h1 {
   font-size: 2.5rem;
   font-family: "Space Grotesk", sans-serif;
+  margin-left: -70rem;
+  animation: s1-h1-animation 1.5s ease-in-out 1s forwards;
+}
+@keyframes s1-h1-animation {
+  to{
+    margin-left: 0rem;
+  }
 }
 .left-container p {
   font-size: 1rem;
   font-family: "Space Grotesk", sans-serif;
+  margin-top: -3rem;
+  opacity: 0;
+  animation: s1-p-animation 1s ease-in-out 2s forwards;
+}
+@keyframes s1-p-animation {
+  to{
+    margin-top: 0rem;
+    opacity: 1;
+  }
 }
 .left-container button {
   background-color: #5b1c15;
@@ -156,6 +204,15 @@ html{
   cursor: pointer;
   font-size: 1rem;
   transition: all .3s ease-in-out;
+  margin-top: -3rem;
+  opacity: 0;
+  animation: s1-btn-animation 1.5s ease-in-out 2.5s forwards;
+}
+@keyframes s1-btn-animation {
+  to{
+    margin-top: 0rem;
+    opacity: 1;
+  }
 }
 .left-container button:hover{
   transform:scale(.9);
@@ -171,6 +228,13 @@ html{
   padding: 20px;
   display: flex;
   align-items: center;
+  opacity: 0;
+  animation: s1-btn-animation 1.5s ease-in-out 2s forwards;
+}
+@keyframes s1-btn-animation {
+  to{
+    opacity: 1;
+  }
 }
 .right-container img {
   width: 100%;
