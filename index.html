@@ -289,10 +289,12 @@
                     </ul>
                 </div>
                 <div class="right-section">
-                    <form action="">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email">
-                        <textarea class="message-input" placeholder="Enter what you want......!"></textarea>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                         <input type="hidden" name="access_key" value="f17ebf48-9b3e-467d-902f-de4266daec95">
+                        
+                         <input type="text"  name="name" required placeholder="Full Name">
+                        <input type="email" name="email" required placeholder="Email">
+                        <textarea class="message-input" name="message" required placeholder="Enter what you want......!"></textarea>
                         <button type="submit"> Send Message</button>
                     </form>
                 </div>
