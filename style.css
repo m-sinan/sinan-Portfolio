@@ -698,6 +698,9 @@ transition: all .3s ease-in-out;
   .project-container .card {
     width: 90%;
   }
+  .project-container .card:hover {
+  transform: none;
+}
   #section-four {
     padding: 7%;
   }
