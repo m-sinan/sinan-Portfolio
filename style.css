@@ -412,7 +412,7 @@ display: none;
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 10px;
 }
 .skills {
@@ -452,7 +452,7 @@ display: none;
   padding-top: 0;
 }
 .skill-arrow{
-  
+  margin-top: 25px;
 }
 
 /* section-three */
