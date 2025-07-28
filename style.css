@@ -708,6 +708,9 @@ transition: all .3s ease-in-out;
   .skills {
     width: 70dvw;
   }
+  .skill-container{
+    animation: none;
+  }
   .project-container {
     flex-wrap: wrap;
   }
