@@ -3,7 +3,8 @@ function toggleMenu() {
 }
  var loader_var;
  function loaderFunction() {
-    loader_var = setTimeout(showPage, 3000);
+
+    loader_var = setTimeout(showPage, 0);
  }
  function showPage() {
     document.getElementById("loader").style.display="none";

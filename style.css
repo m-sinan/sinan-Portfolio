@@ -420,6 +420,15 @@ display: none;
   height: 30dvh;
   margin: auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-logo-collection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .skills-logo {
   width: 35px;
@@ -427,7 +436,10 @@ display: none;
   margin-bottom: 15px;
   background-color: black;
   border-radius: 50%;
-  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills svg {
@@ -438,6 +450,9 @@ display: none;
   color: #919191;
   font-size: 0.9rem;
   padding-top: 0;
+}
+.skill-arrow{
+  
 }
 
 /* section-three */
@@ -466,6 +481,7 @@ display: none;
   font-size: 1rem;
   margin-top: 20px;
 }
+
 .project-container {
   width: 100%;
   display: flex;
