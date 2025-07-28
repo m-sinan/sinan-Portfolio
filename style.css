@@ -711,6 +711,9 @@ transition: all .3s ease-in-out;
   .skill-container{
     animation: none;
   }
+  #section-three{
+    animation: none;
+  }
   .project-container {
     flex-wrap: wrap;
   }
