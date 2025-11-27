@@ -508,6 +508,7 @@ html {
 .project-container .card p {
   color: #919191;
   font-size: 1rem;
+  font-weight: normal;
 }
 .project-container .card button {
   width: 30%;
